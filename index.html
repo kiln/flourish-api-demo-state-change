@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>API state change demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdn.flourish.rocks/flourish-live-v4.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Flourish API state change demo</h1>
+    <div id="controls">
+      <div class="control">
+        <h4 class="control-header">Title</h4>
+        <div class="control-body">
+          <input type="text" name="title" id="title" />
+        </div>
+      </div>
+
+      <div class="control">
+        <h4 class="control-header">Chart type</h4>
+        <div class="control-body">
+          <select name="chart-type" id="chart-type">
+            <option value="line">line</option>
+            <option value="area_stacked">area_stacked</option>
+            <option value="area_prop">area_prop</option>
+            <option value="area_stacked_stream">area_stacked_stream</option>
+            <option value="column_grouped">column_grouped</option>
+            <option value="column_stacked">column_stacked</option>
+            <option value="column_stacked_prop">column_stacked_prop</option>
+            <option value="bar_grouped">bar_grouped</option>
+            <option value="bar_stacked">bar_stacked</option>
+            <option value="bar_stacked_prop">bar_stacked_prop</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="control">
+        <h4 class="control-header">Filter mode</h4>
+        <div class="control-body">
+          <select name="filter-mode" id="filter-mode">
+            <option value="none">None</option>
+            <option value="single">Single</option>
+            <option value="multi">Multi</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="control">
+        <h4 class="control-header">Color palette</h4>
+        <div class="control-body">
+          <select name="color" id="color">
+            <option value="palette_1">Color palette 1</option>
+            <option value="palette_2">Color palette 2</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div id="container"></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
