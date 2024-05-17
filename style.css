@@ -1,0 +1,65 @@
+body {
+  box-sizing: border-box;
+  margin: 2rem 4rem;
+  padding: 0;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+h1 {
+  font-weight: 300;
+  margin: 1rem 0;
+}
+
+h4 {
+  color: #777;
+}
+
+/* Controls */
+#controls {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+}
+
+.control {
+  margin-right: 2.5rem;
+}
+
+.control-header {
+  margin: 0.5rem 0;
+  padding: 0.2rem 0;
+  padding-right: 1rem;
+  border-bottom: 1px solid rgb(0 0 0 / 15%);
+}
+
+input,
+select {
+  width: 100%;
+  padding: 0.5rem 0.4rem;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #555;
+  border: 1px solid rgb(0 0 0 / 15%);
+  border-radius: 4px;
+}
+
+input:focus,
+select:focus {
+  outline: 1px solid #71c2f4;
+}
+
+/* Chart */
+#container {
+  width: 90%;
+  max-width: 900px;
+  margin-top: 2rem;
+  padding: 2rem;
+  border: 1px solid rgb(0 0 0 / 7%);
+  box-shadow: 2px 2px 35px rgb(0 0 0 / 4%);
+}
+
+/* Responsive charts */
+@media (min-width: 900px) {
+  #container {
+    width: 70vw;
+  }
+}
