@@ -23,5 +23,3 @@ before simply updating the API visual.
   visual.update(options);
 })
 ```
-
-See a live demo [here](TODO: LINK)
